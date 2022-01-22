@@ -1,0 +1,38 @@
+.left_sidebar{
+  height: 100vh;
+  position: absolute;
+  left: 50px;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  ul{
+    li{
+
+      a{
+        width: 70px;
+        height: 70px;
+        background: #F5FAFF;
+        box-shadow: 0px 0px 30px rgba(86, 86, 86, 0.25);
+        overflow: hidden;
+        border-radius: 50%;
+        line-height: 100%;
+        align-items: center;
+        justify-content: left;
+        padding-left: 16px;
+        display: flex;
+        transition: 0.4s;
+        span{
+          padding: 0 22px;
+          font-size: 25px;
+          color: #64D370;
+        }
+        &:hover{
+          box-shadow: 0px 0px 30px rgba(86, 86, 86, 0.25);
+          border-radius: 190px;
+          width: 188px;
+        }
+      }
+    }
+  }
+}
