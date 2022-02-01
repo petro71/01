@@ -3,7 +3,7 @@
   height: 254px;
   border-radius: 50%;
   background-color: $main_color;
-  box-shadow: 0px 0px 40px rgba(86, 86, 86, 0.3);
+  box-shadow: 0 0 40px rgba(86, 86, 86, 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,16 +22,91 @@ header{
   top: -47px;
   .navbar-nav{
     background-color: $main_color;
-    box-shadow: 0px 0px 40px rgba(86, 86, 86, 0.3);
+    box-shadow: 0 0 40px rgba(86, 86, 86, 0.3);
     border-radius: 190px;
     position: relative;
   }
+  .nav-item active{
+    color: #F4F9FE;
+  }
+  .tel{
+    padding: 0.5rem 1rem;
+    color: #64D370;
+    background-color: #F5FAFF;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .tel:hover{
+    color: #F4F9FE;
+    background-color: #64D370;
+    border: solid white 1px;
+  }
 }
-.language{
+ .language {
   position: absolute;
   left: 0;
   bottom: -86px;
-  ul{
+
+  ul {
     display: flex;
   }
+
+  li {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 100%;
+    color: #020202;
+    background-color: #F5FAFF;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    padding: 10px 6px;
+    margin: 8px;
+  }
+  li:hover {
+    color: #F4F9FE;
+    background-color: #64D370;
+  }
+  li .active{
+     background-color: #64D370;
+     color: $main_color2;
+  }
+
+ }
+.slogan{
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 45px;
+  letter-spacing: 0.025em;
+  margin-top: 180px;
+  margin-bottom: 42px;
+     .slogan_black{
+       color: #020202;
+     }
+     .slogan_green{
+       color: $main_color3;
+     }
 }
+ .booking a{
+  box-shadow: 0 0 40px rgba(86, 86, 86, 0.3);
+  border-radius: 190px;
+  background-color: #64D370;
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 133.8%;
+  /* identical to box height, or 35px */
+  padding: 13px 68px;
+  text-align: center;
+  letter-spacing: 0.025em;
+
+  color: #F5FAFF;
+ }
