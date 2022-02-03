@@ -8,8 +8,8 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  span{
-    width: 100%;
+  .brand{
+    width: 80%;
     font-size: 14px;
     color: #020202;
     display: block;
@@ -18,18 +18,20 @@
   }
 }
 header{
+
   position: relative;
   top: -47px;
   .navbar-nav{
+    .nav-item active{
+      color: red;
+    }
     background-color: $main_color;
     box-shadow: 0 0 40px rgba(86, 86, 86, 0.3);
     border-radius: 190px;
     position: relative;
   }
-  .nav-item active{
-    color: #F4F9FE;
-  }
-  .tel{
+
+   .tel{
     padding: 0.5rem 1rem;
     color: #64D370;
     background-color: #F5FAFF;
@@ -38,13 +40,13 @@ header{
     font-weight: bold;
     font-size: 20px;
     line-height: 24px;
-  }
-  .tel:hover{
+   }
+   .tel:hover{
     color: #F4F9FE;
     background-color: #64D370;
     border: solid white 1px;
-  }
-}
+   }
+
  .language {
   position: absolute;
   left: 0;
@@ -67,18 +69,22 @@ header{
     height: 35px;
     padding: 10px 6px;
     margin: 8px;
+    .lang:hover{
+      color: #F4F9FE;
+
+    }
   }
   li:hover {
-    color: #F4F9FE;
+
     background-color: #64D370;
   }
-  li .active{
+  li.active{
      background-color: #64D370;
      color: $main_color2;
   }
 
  }
-.slogan{
+ .slogan{
   font-family: "Comfortaa";
   font-style: normal;
   font-weight: 600;
@@ -93,20 +99,79 @@ header{
      .slogan_green{
        color: $main_color3;
      }
-}
- .booking a{
-  box-shadow: 0 0 40px rgba(86, 86, 86, 0.3);
-  border-radius: 190px;
-  background-color: #64D370;
-  font-family: "Comfortaa";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 133.8%;
-  /* identical to box height, or 35px */
-  padding: 13px 68px;
-  text-align: center;
-  letter-spacing: 0.025em;
-
-  color: #F5FAFF;
  }
+ .booking{
+   .booking_btn{
+     box-shadow: 0 0 40px rgba(86, 86, 86, 0.3);
+     border-radius: 190px;
+     background-color: #64D370;
+     font-family: "Comfortaa";
+     font-style: normal;
+     font-weight: bold;
+     font-size: 26px;
+     line-height: 133.8%;
+
+     padding: 13px 68px;
+     text-align: center;
+
+
+     color: #F5FAFF;
+   }
+ }
+   .sub_main{
+     .p_black{
+       // font-family: "Montserrat";
+       font-size: 20px;
+       font-style: normal;
+       font-weight: 400;
+       line-height: 20px;
+
+       text-align: left;
+
+
+
+
+     }
+     .p_green{
+       font-family: "Montserrat";
+       font-size: 35px;
+       font-style: normal;
+       font-weight: 700;
+       line-height: 35px;
+       text-align: center;
+       color: #64D370;
+     }
+     padding: 0 35px;
+     margin-top: -15px;
+     align-content: center ;
+   }
+
+
+}
+
+
+.social_icon{
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  .social{
+    list-style: none;
+    .soc_tg i {
+      background-color: #850409;
+      color: #ff0000;
+    }
+    .soc_vb i{
+      background-color: #98161b;
+      color: #ff0000;
+    }
+    .soc_ct i{
+      background-color: #98161b;
+      color: #ff0000;
+    }
+  }
+
+
+
+
+}
+

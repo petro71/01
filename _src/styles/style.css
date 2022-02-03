@@ -1,117 +1,174 @@
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
-  color: black; }
+  color: black;
+}
 
 ul {
   list-style: none;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+}
 
 button {
-  color: black; }
-  button:focus, button:focus-visible {
-    outline: none; }
+  color: black;
+}
+
+button:focus,
+button:focus-visible {
+  outline: none;
+}
 
 a {
-  color: black; }
-  a:hover {
-    color: black;
-    text-decoration: none; }
+  color: black;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+}
 
 body {
   background-color: #E5E5E5;
-  height: 5000px; }
+  height: 5000px;
+}
 
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   src: url("../../fonts/Montserrat-Bold.eot");
   src: url("../../fonts/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Montserrat-Bold.woff2") format("woff2"), url("../../fonts/Montserrat-Bold.woff") format("woff"), url("../../fonts/Montserrat-Bold.ttf") format("truetype"), url("../../fonts/Montserrat-Bold.svg#Montserrat-Bold") format("svg");
   font-weight: bold;
   font-style: normal;
-  font-display: swap; }
+  font-display: swap;
+}
+
 @font-face {
-  font-family: 'Comfortaa';
+  font-family: "Comfortaa";
   src: url("../../fonts/Comfortaa-Regular.eot");
   src: url("../../fonts/Comfortaa-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/Comfortaa-Regular.woff2") format("woff2"), url("../../fonts/Comfortaa-Regular.woff") format("woff"), url("../../fonts/Comfortaa-Regular.ttf") format("truetype"), url("../../fonts/Comfortaa-Regular.svg#Comfortaa-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
-  font-display: swap; }
+  font-display: swap;
+}
+
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   src: url("../../fonts/Montserrat-Regular.eot");
   src: url("../../fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/Montserrat-Regular.woff2") format("woff2"), url("../../fonts/Montserrat-Regular.woff") format("woff"), url("../../fonts/Montserrat-Regular.ttf") format("truetype"), url("../../fonts/Montserrat-Regular.svg#Montserrat-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
-  font-display: swap; }
+  font-display: swap;
+}
+
 .navbar-brand {
   width: 264px;
   height: 254px;
   border-radius: 50%;
   background-color: #F5FAFF;
-  box-shadow: 0 0 40px rgba(86, 86, 86, 0.3);
+  -webkit-box-shadow: 0 0 40px rgba(86, 86, 86, 0.3);
+          box-shadow: 0 0 40px rgba(86, 86, 86, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; }
-  .navbar-brand span {
-    width: 100%;
-    font-size: 14px;
-    color: #020202;
-    display: block;
-    margin: 0;
-    text-align: center; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.navbar-brand .brand {
+  width: 80%;
+  font-size: 14px;
+  color: #020202;
+  display: block;
+  margin: 0;
+  text-align: center;
+}
 
 header {
   position: relative;
-  top: -47px; }
-  header .navbar-nav {
-    background-color: #F5FAFF;
-    box-shadow: 0 0 40px rgba(86, 86, 86, 0.3);
-    border-radius: 190px;
-    position: relative; }
-  header .nav-item active {
-    color: #F4F9FE; }
-  header .tel {
-    padding: 0.5rem 1rem;
-    color: #64D370;
-    background-color: #F5FAFF;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 24px; }
-  header .tel:hover {
-    color: #F4F9FE;
-    background-color: #64D370;
-    border: solid white 1px; }
+  top: -47px;
+}
 
-.language {
+header .navbar-nav {
+  background-color: #F5FAFF;
+  -webkit-box-shadow: 0 0 40px rgba(86, 86, 86, 0.3);
+          box-shadow: 0 0 40px rgba(86, 86, 86, 0.3);
+  border-radius: 190px;
+  position: relative;
+}
+
+header .navbar-nav .nav-item active {
+  color: red;
+}
+
+header .tel {
+  padding: 0.5rem 1rem;
+  color: #64D370;
+  background-color: #F5FAFF;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+header .tel:hover {
+  color: #F4F9FE;
+  background-color: #64D370;
+  border: solid white 1px;
+}
+
+header .language {
   position: absolute;
   left: 0;
-  bottom: -86px; }
-  .language ul {
-    display: flex; }
-  .language li {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 100%;
-    color: #020202;
-    background-color: #F5FAFF;
-    border-radius: 50%;
-    width: 35px;
-    height: 35px;
-    padding: 10px 6px;
-    margin: 8px; }
-  .language li:hover {
-    color: #F4F9FE;
-    background-color: #64D370; }
-  .language li .active {
-    background-color: #64D370;
-    color: #F4F9FE; }
+  bottom: -86px;
+}
 
-.slogan {
+header .language ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .language li {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 100%;
+  color: #020202;
+  background-color: #F5FAFF;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  padding: 10px 6px;
+  margin: 8px;
+}
+
+header .language li .lang:hover {
+  color: #F4F9FE;
+}
+
+header .language li:hover {
+  background-color: #64D370;
+}
+
+header .language li.active {
+  background-color: #64D370;
+  color: #F4F9FE;
+}
+
+header .slogan {
   font-family: "Comfortaa";
   font-style: normal;
   font-weight: 600;
@@ -119,14 +176,20 @@ header {
   line-height: 45px;
   letter-spacing: 0.025em;
   margin-top: 180px;
-  margin-bottom: 42px; }
-  .slogan .slogan_black {
-    color: #020202; }
-  .slogan .slogan_green {
-    color: #64D370; }
+  margin-bottom: 42px;
+}
 
-.booking a {
-  box-shadow: 0 0 40px rgba(86, 86, 86, 0.3);
+header .slogan .slogan_black {
+  color: #020202;
+}
+
+header .slogan .slogan_green {
+  color: #64D370;
+}
+
+header .booking .booking_btn {
+  -webkit-box-shadow: 0 0 40px rgba(86, 86, 86, 0.3);
+          box-shadow: 0 0 40px rgba(86, 86, 86, 0.3);
   border-radius: 190px;
   background-color: #64D370;
   font-family: "Comfortaa";
@@ -134,11 +197,60 @@ header {
   font-weight: bold;
   font-size: 26px;
   line-height: 133.8%;
-  /* identical to box height, or 35px */
   padding: 13px 68px;
   text-align: center;
-  letter-spacing: 0.025em;
-  color: #F5FAFF; }
+  color: #F5FAFF;
+}
+
+header .sub_main {
+  padding: 0 35px;
+  margin-top: -15px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+header .sub_main .p_black {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+}
+
+header .sub_main .p_green {
+  font-family: "Montserrat";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 35px;
+  text-align: center;
+  color: #64D370;
+}
+
+.social_icon {
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+}
+
+.social_icon .social {
+  list-style: none;
+}
+
+.social_icon .social .soc_tg i {
+  background-color: #850409;
+  color: #ff0000;
+}
+
+.social_icon .social .soc_vb i {
+  background-color: #98161b;
+  color: #ff0000;
+}
+
+.social_icon .social .soc_ct i {
+  background-color: #98161b;
+  color: #ff0000;
+}
 
 .left_sidebar {
   height: 100vh;
@@ -146,37 +258,86 @@ header {
   left: 50px;
   top: 0;
   z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center; }
-  .left_sidebar ul li {
-    margin-bottom: 50px; }
-    .left_sidebar ul li a {
-      width: 70px;
-      height: 70px;
-      background: #F5FAFF;
-      box-shadow: 0 0 30px rgba(86, 86, 86, 0.25);
-      overflow: hidden;
-      border-radius: 50%;
-      line-height: 100%;
-      align-items: center;
-      justify-content: left;
-      padding-left: 16px;
-      display: flex;
-      transition: 0.4s; }
-      .left_sidebar ul li a span {
-        padding: 0 22px;
-        font-size: 25px;
-        color: #64D370; }
-      .left_sidebar ul li a:hover {
-        box-shadow: 0 0 30px rgba(86, 86, 86, 0.25);
-        border-radius: 190px;
-        width: 188px; }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.left_sidebar ul li {
+  margin-bottom: 50px;
+}
+
+.left_sidebar ul li a {
+  width: 70px;
+  height: 70px;
+  background: #F5FAFF;
+  -webkit-box-shadow: 0 0 30px rgba(86, 86, 86, 0.25);
+          box-shadow: 0 0 30px rgba(86, 86, 86, 0.25);
+  overflow: hidden;
+  border-radius: 50%;
+  line-height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding-left: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.left_sidebar ul li a span {
+  padding: 0 22px;
+  font-size: 25px;
+  color: #64D370;
+}
+
+.left_sidebar ul li a .icon1 {
+  margin: auto;
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  color: #020202;
+}
+
+.left_sidebar ul li a .icon {
+  margin: auto;
+  padding-left: 12px;
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 100%;
+  color: #020202;
+}
+
+.left_sidebar ul li a:hover {
+  -webkit-box-shadow: 0 0 30px rgba(86, 86, 86, 0.25);
+          box-shadow: 0 0 30px rgba(86, 86, 86, 0.25);
+  border-radius: 190px;
+  width: 188px;
+}
 
 .main_screen {
   height: 100vh;
   background-image: url("../images/Ellipse-100.png");
   background-position: right;
   background-size: contain;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+}
 
-/*# sourceMappingURL=style.css.map */
+@supports (-webkit-appearance:none) {
+  .main_screen {
+    background-image: url("../images/Ellipse-100.webp");
+  }
+}
